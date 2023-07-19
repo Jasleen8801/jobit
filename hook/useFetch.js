@@ -20,13 +20,13 @@ const useFetch = (endpoint, query) => {
           params: { ...query },
           headers: {
             "X-RapidAPI-Key":
-              "e91f5e50c9msh45c94368e0e2376p150ba4jsncecd9fbdf57f",
+              "a1bcdb1fb8msh52a0f4ee064eef5p11f2e9jsnd19bafcb6ae2",
             "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
           },
         }
       );
-      console.log(response);
-      // setData(response.data.data);
+      // console.log(response);
+      setData(response.data.data);
       setIsLoading(false);
     } catch (error) {
       setError(error);
